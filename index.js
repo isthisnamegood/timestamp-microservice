@@ -19,7 +19,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/api/:date?", (req, res) => {
-  dateString = req.params.date;
+  let dateString = req.params.date;
   let date;
 
   if (!dateString) {
